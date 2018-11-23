@@ -1,0 +1,117 @@
+server:
+  port: 8766
+spring:
+  application:
+    name: zuul-server
+  datasource:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+  cloud:
+        consul:
+            host: localhost
+            port: 8500
+            discovery:
+              instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+              service-name: gateway-service
+  #            healthCheckPath: ${management.context-path}/health
+              healthCheckPath: /actuator/health
+              healthCheckInterval: 15s
+              tags: auther=zhanghuan, gateway,cluster=GATEWAY-SERVICE,app-config=GATEWAY-SERVICE
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      enabled: true
+  redis.:
+      timeout: 10
+      database: 0
+      host: localhost
+      port: 6379
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 20000
+  MaxAutoRetries: 0 #对第一次请求的服务的重试次数
+  MaxAutoRetriesNextServer: 0 #要重试的下一个服务的最大数量（不包括第一个服务）
+  OkToRetryOnAllOperations: false
+hystrix:
+  threadpool:
+    default:
+      coreSize: 20
+      maximumSize: 50
+      maxQueueSize: -1
+      allowMaximumSizeToDivergeFromCoreSize: true
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            interruptOnTimeout: false
+            timeoutInMilliseconds: 60000
+zuul:
+    prefix: /ygego
+    routes:
+        user-service:
+          path: /user/**
+          serviceId: user-service
+        product-service:
+            path: /product/**
+            serviceId: product-service
+        ribbon-service:
+           path: /ribbon/**
+           url: http://localhost:8381/
+    ribbonIsolationStrategy: THREAD
+    threadPool:
+      useSeparateThreadPools: true
+      threadPoolKeyPrefix: zuulgateway
+    max:
+      host:
+        max-per-route-connections: 200
+        max-total-connections: 500
+    host:
+      socket-timeout-millis: 50000
+
+      connect-timeout-millis: 100000
+    ratelimit:
+        key-prefix: ${spring.application.name:rate-limit-application}
+        enabled: true
+        repository: REDIS
+        behind-proxy: true
+        default-policy-list: #optional - will apply unless specific policy exists
+          - limit: 3 #optional - request number limit per refresh interval window
+            quota: 3 #optional - request time limit per refresh interval window (in seconds)
+            refresh-interval: 60 #default value (in seconds)
+            type: #optional
+              - user
+              - origin
+              - url
+        policy-list:
+          user-service:
+            - limit: 10 #optional - request number limit per refresh interval window
+              quota: 10 #optional - request time limit per refresh interval window (in seconds)
+              refresh-interval: 60 #default value (in seconds)
+              type: #optional
+                - user
+                - origin
+                - url
+           # - type: #optional value for each type
+                #- user=anonymous
+               # - origin=somemachine.com
+                #- url=/api #url prefix
+               # - role=user
+     # type:
+      #  - user #可指定用户粒度
+       # - origin #可指定客户端地址粒度
+       # - url #可指定url粒度
+
+

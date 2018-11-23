@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bms-sleuth-server" />
+        <module name="config-service" />
+        <module name="eureka-service" />
+        <module name="gateway-service" />
+        <module name="monitoring-service" />
+        <module name="product-service" />
+        <module name="ribbon-service" />
+        <module name="sleuth-service" />
+        <module name="spring-boot-admin" />
+        <module name="spring-cloud-config" />
+        <module name="spring-cloud-config-client" />
+        <module name="spring-cloud-gateway" />
+        <module name="spring-cloud-hystrix-dashboard" />
+        <module name="spring-cloud-hystrix-dashboard-turbine" />
+        <module name="spring-cloud-stream" />
+        <module name="spring-demo-service-ribbon" />
+        <module name="turbine-service" />
+        <module name="user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-service" target="1.8" />
+      <module name="bms-sleuth-server" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-service" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="monitoring-service" target="1.8" />
+      <module name="product-service" target="1.8" />
+      <module name="register-service" target="1.8" />
+      <module name="ribbon-service" target="1.8" />
+      <module name="sleuth-service" target="1.8" />
+      <module name="spring-boot-admin" target="1.8" />
+      <module name="spring-cloud-components" target="1.5" />
+      <module name="spring-cloud-config" target="1.8" />
+      <module name="spring-cloud-config-client" target="1.8" />
+      <module name="spring-cloud-demo" target="1.5" />
+      <module name="spring-cloud-demo-consule" target="1.5" />
+      <module name="spring-cloud-gateway" target="1.8" />
+      <module name="spring-cloud-hystrix-dashboard" target="1.8" />
+      <module name="spring-cloud-hystrix-dashboard-turbine" target="1.8" />
+      <module name="spring-cloud-service1" target="1.8" />
+      <module name="spring-cloud-service2" target="1.8" />
+      <module name="spring-cloud-stream" target="1.8" />
+      <module name="spring-demo-service" target="1.8" />
+      <module name="spring-demo-service-feign" target="1.8" />
+      <module name="spring-demo-service-ribbon" target="1.5" />
+      <module name="stream-service" target="1.8" />
+      <module name="turbine-service" target="1.8" />
+      <module name="user-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

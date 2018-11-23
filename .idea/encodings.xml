@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitoring-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/register-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sleuth-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-service1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-service1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-service2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-service2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-demo-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-demo-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-demo-service-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/turbine-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+server:
+  port: 8786
+
+spring:
+  application:
+    name: user-service
+
+  ## 配置rabbitMQ 信息
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      trace:
+        enabled: true
+
+

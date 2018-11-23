@@ -1,0 +1,22 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: sleuth-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+      instance-id: ${spring.application.name}:${spring.cloud.client.ip-Address}:${spring.application.instance_id:${server.port}}
+      ip-address: true
+  sleuth.enabled: true
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+
+
+  #      java -jar zipkin.jar --zipkin.collector.rabbitmq.addresses=127.0.0.1
+

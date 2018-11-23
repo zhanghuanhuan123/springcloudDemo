@@ -1,0 +1,32 @@
+server:
+  port: 8381
+spring:
+  application:
+    name: ribbon-service
+  cloud:
+       consul:
+           host: localhost
+           port: 8500
+           discovery:
+             instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+             service-name: ribbon-service
+ #            healthCheckPath: ${management.context-path}/health
+             healthCheckPath: /actuator/health
+             healthCheckInterval: 15s
+             tags: auther=zhanghuan, user,cluster=ribbon-service,app-config=ribbon-service
+       config:
+           discovery:
+             enabled: true
+             service-id: config-service
+ribbon-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS

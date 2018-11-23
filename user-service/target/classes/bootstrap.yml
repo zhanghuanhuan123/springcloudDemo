@@ -1,0 +1,78 @@
+spring:
+  datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        platform: mysql
+        url: jdbc:mysql://localhost:3306/eshop?serverTimezone=UTC&useSSL=false
+        username: root
+        password: 123456
+  cloud:
+      consul:
+          host: localhost
+          port: 8500
+          discovery:
+            instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+            service-name: user-service
+#            healthCheckPath: ${management.context-path}/health
+            healthCheckPath: /actuator/health
+            healthCheckInterval: 15s
+            tags: auther=zhanghuan, user,cluster=USER-SERVICE,app-config=USER-SERVICE
+      config:
+        name: foo
+        uri: http://localhost:8889
+        profile: prod
+        label: master
+  sleuth:
+    sampler:
+      probability:
+        percentage: 1.0
+
+ribbon:
+  ConnectTimeout: 50000
+  ReadTimeout: 30000
+  MaxAutoRetries: 0 #对第一次请求的服务的重试次数
+  MaxAutoRetriesNextServer: 0 #要重试的下一个服务的最大数量（不包括第一个服务）
+  OkToRetryOnAllOperations: false
+hystrix:
+  threadpool:
+    default:
+      coreSize: 20
+      maximumSize: 50
+      maxQueueSize: -1
+      allowMaximumSizeToDivergeFromCoreSize: true
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            interruptOnTimeout: false
+            timeoutInMilliseconds: 90000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
+#####################################################################################################
+
+
+
+# mybatis mapper xml 配置
+mybatis:
+  # mybatis.type-aliases-package：指定domain类的基包，即指定其在*Mapper.xml文件中可以使用简名来代替全类名（看后边的UserMapper.xml介绍）
+  type-aliases-package:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+#####################################################################################################
+# log 配置
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.itmuch: DEBUG
+#####################################################################################################

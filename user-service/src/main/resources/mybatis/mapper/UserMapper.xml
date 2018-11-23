@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ygego.user.mapper.IUserMapper">
+
+
+    <resultMap id="result" type="User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="age" property="age" jdbcType="TINYINT"/>
+    </resultMap>
+
+
+    <!-- 若不需要自动返回主键，将useGeneratedKeys="true" keyProperty="id"去掉即可(当然如果不需要自动返回主键，直接用注解即可) -->
+    <insert id="insertUser" parameterType="User" useGeneratedKeys="false" keyProperty="id">
+        <![CDATA[
+
+           INSERT INTO user
+           (
+               name,
+               age
+           )
+           VALUES
+           (
+               #{name, jdbcType=VARCHAR},
+               #{age, jdbcType=TINYINT}
+           )
+
+        ]]>
+    </insert>
+
+    <select id="findUserById" resultMap="result" parameterType="Long">
+        select * from user
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+
+    <select id="findAllUsers" resultMap="result">
+        select * from user
+    </select>
+</mapper>

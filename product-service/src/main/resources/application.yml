@@ -1,0 +1,16 @@
+server:
+  port: 8782
+spring:
+  application:
+    name: product-service
+
+     ## 配置rabbitMQ 信息
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      trace:
+        enabled: true
