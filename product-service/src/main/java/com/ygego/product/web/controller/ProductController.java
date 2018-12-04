@@ -82,9 +82,4 @@ public class ProductController {
         return productService.hello();
     }
 
-    @RequestMapping("/port")
-    @ResponseBody
-    public String port() {
-        return productService.hello();
-    }
 }

@@ -9,7 +9,7 @@ spring:
           uri: https://gitee.com/Mrzhh/config-file.git  # 配置Git仓库的地址
           searchPaths: foo
           username: 18210692652@163.com                                                        # Git仓库的账号
-          password: 111111qwe
+          password: xxxxxxx
     bus:
       trace:
         enabled: true

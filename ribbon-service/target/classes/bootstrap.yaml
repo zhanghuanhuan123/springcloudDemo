@@ -17,10 +17,10 @@ spring:
        config:
            discovery:
              enabled: true
-             service-id: ribbon-service
-#ribbon-service:
- # ribbon:
-  #  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+             service-id: config-service
+ribbon-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 management:
   endpoints:

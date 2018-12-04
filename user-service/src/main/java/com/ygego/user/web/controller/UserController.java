@@ -28,7 +28,7 @@ public class UserController {
     @HystrixCommand
     public List<User> findAllUsers() {
         Product product =productService.findById(1);
-        logger.info(product.getId()+"======="+product.getBrandId());
+        logger.info("productService call back result barandId ------->" + product.getBrandId());
         return iUserService.findAllUsers();
     }
 

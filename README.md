@@ -2,9 +2,9 @@
 
 一款基于 SpringCloud 组件构建的分布式服务架构（持续更新），可以作学习之用
 
-SpringCloud 版本 Finchley.RC2
+SpringCloud 版本 Finchley.RC1
 
-SpringBoot 版本 2.0.6.RELEASE
+SpringBoot 版本 2.0.1.RELEASE
 
 ## 系统module
 

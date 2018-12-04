@@ -17,9 +17,9 @@ public class SpringDemoRibbonController {
     @Autowired
     RestTemplate restTemplate;
 
-    @GetMapping("port")
+    @GetMapping("hello")
     public String port() {
-        return springDemoRibbonService.port();
+        return springDemoRibbonService.hello();
     }
 
     /**
@@ -30,7 +30,7 @@ public class SpringDemoRibbonController {
     @GetMapping("ribbon")
     @HystrixCommand(fallbackMethod = "ribbonFallback")
     public String ribbon() {
-        return restTemplate.getForObject("http://product-service/port", String.class);
+        return restTemplate.getForObject("http://product-service/hello", String.class);
     }
 
     public String ribbonFallback() {
