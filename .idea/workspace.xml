@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d05c2707-a58f-4592-a231-b5d4341394ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/target/classes/com/ygego/product/web/controller/ProductController.class" afterPath="$PROJECT_DIR$/product-service/target/classes/com/ygego/product/web/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ribbon-service/target/classes/com/geny/ribbon/SpringDemoRibbonController.class" afterPath="$PROJECT_DIR$/ribbon-service/target/classes/com/geny/ribbon/SpringDemoRibbonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ribbon-service/target/classes/com/geny/ribbon/SpringDemoRibbonService.class" afterPath="$PROJECT_DIR$/ribbon-service/target/classes/com/geny/ribbon/SpringDemoRibbonService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user-service/target/classes/com/ygego/user/web/controller/UserController.class" afterPath="$PROJECT_DIR$/user-service/target/classes/com/ygego/user/web/controller/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-service/src/main/resources/bootstrap.yaml" afterPath="$PROJECT_DIR$/config-service/src/main/resources/bootstrap.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/web/controller/ProductController.java" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/web/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonController.java" afterPath="$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java" afterPath="$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ribbon-service/target/classes/bootstrap.yaml" afterPath="$PROJECT_DIR$/ribbon-service/target/classes/bootstrap.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/turbine-service/turbine-service.iml" afterPath="$PROJECT_DIR$/turbine-service/turbine-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UserController.java" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka-service/target/" />
     <ignored path="$PROJECT_DIR$/spring-demo-service-feign/target/" />
@@ -55,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductServiceApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/ProductServiceApplication.java">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/web/controller/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="1102">
+              <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -70,98 +59,88 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="87" />
-              <folding>
-                <marker date="1543919057393" expanded="true" signature="1135:1298" ph="/**...*/" />
-                <marker date="1543919057393" expanded="true" signature="1303:2101" ph="@{...}" />
-                <marker date="1543919057393" expanded="true" signature="2145:2557" ph="{...}" />
-                <marker date="1543919057393" expanded="true" signature="2593:2784" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/web/controller/ProductController.java">
+      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-              <folding>
-                <element signature="e#2615#2616#0" expanded="true" />
-                <element signature="e#2660#2661#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="798">
+              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/service/ProductService.java">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="95">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringDemoRibbonController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonController.java">
+      <file leaf-file-name="ProductServiceFactoryImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductServiceFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="209">
+              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="45" />
               <folding>
-                <marker date="1543918705695" expanded="false" signature="1065:1071" ph=" }" />
-                <marker date="1543918705695" expanded="false" signature="1107:1118" ph=" { " />
-                <marker date="1543918705695" expanded="false" signature="1153:1159" ph=" }" />
+                <element signature="e#721#722#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringDemoRibbonService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.yaml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/bootstrap.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/model/Product.java">
+      <file leaf-file-name="ProductServiceFactoryProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductServiceFactoryProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/config/SecurityConfiguration.java">
+      <file leaf-file-name="ConfigClientController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/ConfigClientController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwaggerDocs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/config/SwaggerDocs.java">
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="95">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product-service/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -226,7 +205,6 @@
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/DynamicZuulRouteLocator.java" />
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/dao/PropertiesDao.java" />
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/filter/PreFilter.java" />
-        <option value="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/filter/ErrorFilter.java" />
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/controller/ErrorHandlerController.java" />
@@ -240,6 +218,7 @@
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/ribbon-service/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java" />
         <option value="$PROJECT_DIR$/config-service/src/main/resources/bootstrap.yaml" />
+        <option value="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -284,9 +263,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -987,7 +966,8 @@
       <workItem from="1543541941622" duration="46000" />
       <workItem from="1543916082725" duration="954000" />
       <workItem from="1543918195550" duration="882000" />
-      <workItem from="1543919179683" duration="22000" />
+      <workItem from="1543919179683" duration="86000" />
+      <workItem from="1543975694929" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="tijaio">
       <created>1541044805328</created>
@@ -1213,11 +1193,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543919061991</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="spring cloud 代码修改">
+      <created>1543919220030</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1543919220030</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202913000" />
+    <option name="totallyTimeSpent" value="202997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1247,7 +1234,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17324094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1748401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1316,7 +1303,8 @@
     <MESSAGE value="spring cloud 修改ribbon" />
     <MESSAGE value="spring cloud 超时机制技术验证 zuul 统一异常 filter技术验证" />
     <MESSAGE value="spring cloud 提交sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring cloud 提交sql" />
+    <MESSAGE value="spring cloud 代码修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring cloud 代码修改" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1352,27 +1340,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/entity/ZuulRouteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/fallback/ZuulFallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway-service/src/main/java/com/geny/gateway/config/DynamicZuulConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1532,33 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductServiceFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductServiceFactoryProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1590,14 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/UserServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1611,13 +1543,6 @@
         <state relative-caret-position="190">
           <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1640,7 +1565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1672,7 +1596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1681,30 +1604,6 @@
         <state relative-caret-position="171">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="87" />
-          <folding>
-            <marker date="1543919057393" expanded="true" signature="1135:1298" ph="/**...*/" />
-            <marker date="1543919057393" expanded="true" signature="1303:2101" ph="@{...}" />
-            <marker date="1543919057393" expanded="true" signature="2145:2557" ph="{...}" />
-            <marker date="1543919057393" expanded="true" signature="2593:2784" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/web/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-          <folding>
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#2660#2661#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1730,8 +1629,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/bootstrap.yaml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-service/src/main/java/com/ygego/product/web/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductServiceFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#721#722#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/rpc/service/ProductServiceFactoryProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/ConfigClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/ygego/user/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
           <folding />
         </state>
       </provider>

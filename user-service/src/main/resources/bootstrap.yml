@@ -57,7 +57,9 @@ management:
       health:
         show-details: ALWAYS
 #####################################################################################################
-
+feign:
+  hystrix:
+    enabled: true
 
 
 # mybatis mapper xml 配置
