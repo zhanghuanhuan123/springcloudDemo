@@ -68,7 +68,7 @@ public class ProductController {
             @ApiParam(name = "id", required = true, value = "产品Id") @RequestParam(value = "id") Long id) {
         try {
             logger.info("findById" + id);
-            //Thread.sleep(1000);
+
             return productService.findById(id);
         } catch (Exception e) {
             logger.error("", e);

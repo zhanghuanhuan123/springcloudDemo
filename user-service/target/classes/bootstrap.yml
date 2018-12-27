@@ -16,11 +16,16 @@ spring:
             healthCheckPath: /actuator/health
             healthCheckInterval: 15s
             tags: auther=zhanghuan, user,cluster=USER-SERVICE,app-config=USER-SERVICE
-      config:
-        name: foo
-        uri: http://localhost:8889
-        profile: prod
-        label: master
+            prefer-ip-address:  true
+      #config:
+        #discovery:
+          #enabled: true
+          #service-id: services-config
+        #fail_fast: true
+        #name: goods
+        #profile: alpha
+        #label: master
+
   sleuth:
     sampler:
       probability:
@@ -57,7 +62,9 @@ management:
       health:
         show-details: ALWAYS
 #####################################################################################################
-
+feign:
+  hystrix:
+    enabled: true
 
 
 # mybatis mapper xml 配置

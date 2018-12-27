@@ -82,36 +82,6 @@ zuul:
       socket-timeout-millis: 50000
 
       connect-timeout-millis: 100000
-    ratelimit:
-        key-prefix: ${spring.application.name:rate-limit-application}
-        enabled: true
-        repository: REDIS
-        behind-proxy: true
-        default-policy-list: #optional - will apply unless specific policy exists
-          - limit: 3 #optional - request number limit per refresh interval window
-            quota: 3 #optional - request time limit per refresh interval window (in seconds)
-            refresh-interval: 60 #default value (in seconds)
-            type: #optional
-              - user
-              - origin
-              - url
-        policy-list:
-          user-service:
-            - limit: 10 #optional - request number limit per refresh interval window
-              quota: 10 #optional - request time limit per refresh interval window (in seconds)
-              refresh-interval: 60 #default value (in seconds)
-              type: #optional
-                - user
-                - origin
-                - url
-           # - type: #optional value for each type
-                #- user=anonymous
-               # - origin=somemachine.com
-                #- url=/api #url prefix
-               # - role=user
-     # type:
-      #  - user #可指定用户粒度
-       # - origin #可指定客户端地址粒度
-       # - url #可指定url粒度
+
 
 

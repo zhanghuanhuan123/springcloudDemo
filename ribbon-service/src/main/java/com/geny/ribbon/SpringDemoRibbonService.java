@@ -21,7 +21,7 @@ public class SpringDemoRibbonService {
     public String hello() {
         //this.loadBalancerClient.choose("product-service");  //随机访问策略
         String result = restTemplate.getForObject("http://product-service/hello", String.class);
-        logger.info("product-service/hello call back result---------->" + result);
+        logger.info("ribbon service rpc product-service:hello call back result---------->" + result);
         return result;
     }
 

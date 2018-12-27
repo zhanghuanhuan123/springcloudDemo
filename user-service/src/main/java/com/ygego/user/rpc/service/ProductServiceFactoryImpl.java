@@ -15,7 +15,12 @@ public class ProductServiceFactoryImpl implements FallbackFactory<ProductService
         return new ProductServiceFactoryProxy() {
             @Override
             public Product findById(long id) {
-                return new Product();
+                Product o = new Product();
+                o.setBrandId(999l);
+                o.setId(9999l);
+                o.setName("我是降级");
+
+                return o;
             }
         };
     }

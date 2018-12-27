@@ -16,15 +16,14 @@ spring:
             healthCheckPath: /actuator/health
             healthCheckInterval: 15s
             tags: auther=zhanghuan, product,app-config=product-service
-      config:
-            discovery:
-              enabled: true
-              service-id: config-service
-  sleuth:
-      sampler:
-        probability:
-          percentage: 1.0
-
+      #config:
+        #discovery:
+          #enabled: true
+          #service-id: services-config
+        #fail_fast: true
+        #name: order
+        #profile: dev
+        #label: master
 management:
   endpoints:
     web:
@@ -33,6 +32,8 @@ management:
   endpoint:
       health:
         show-details: ALWAYS
+#####################################################################################################
+
 #####################################################################################################
 # mybatis mapper xml 配置
 mybatis:

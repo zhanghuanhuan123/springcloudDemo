@@ -12,7 +12,8 @@ public class ConfigClientController {
 
     @Autowired
     private ConfigInfoProperties configInfoValue;
-    @GetMapping("/profile")
+
+    @GetMapping("/env")
     public String getProfile() {
         return configInfoValue.getProfile();
     }

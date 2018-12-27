@@ -1,34 +1,31 @@
-server:
-  port: 8889
-
 spring:
   cloud:
-    config:
-      server:
-        git:
-          uri: https://gitee.com/Mrzhh/config-file.git  # 配置Git仓库的地址
-          searchPaths: foo
-          username: 18210692652@163.com                                                        # Git仓库的账号
-          password: 111111qwe
-    bus:
-      trace:
-        enabled: true
-  application:
-    name: config-service
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    security:
-         enabled: false
-
+     consul:
+        host: localhost
+        port: 8500
+        discovery:
+          instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+          service-name: ${spring.application.name}
+#            healthCheckPath: ${management.context-path}/health
+          healthCheckPath: /actuator/health
+          healthCheckInterval: 15s
+          prefer-ip-address:  true
+     config:
+       server:
+         git:
+           skip-ssl-validation : true
+           uri: https://zhanghuanj@git.ennew.alpha/root/config-center.git # 配置Git仓库的地址
+           searchPaths: /**
+           username: zhanghuanj                                                      # Git仓库的账号
+           password: 258369qwe
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
-
-  endpoint:
-    health:
-      show-details: always
+        include: bus-refresh,encrypt
+encrypt:
+  keyStore:
+    location: classpath:/www.ygego.com_keystore.jks
+    password: 123456789
+    alias: www.ygego.com
+    secret: 123456789
